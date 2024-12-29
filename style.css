@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #0f172a;
+    --secondary-color: #fff;
+    --button-color: rgb(159, 182, 193);
+    --border-color: #585858;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, 'sans-serif';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.container {
+    background-color: var(--secondary-color);
+    height: auto;
+    width: 30rem;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem 2.5rem;
+}
+
+.heading {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.amount {
+    width: auto;
+    margin-top: 2rem;
+}
+
+.amount p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.amount input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    border: 1px solid var(--border-color);
+    font-size: 1.1rem;
+}
+
+.converter {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.from {
+    width: auto;
+    height: auto;
+}
+
+.from p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.from img {
+    position: absolute;
+    width: 3rem;
+    margin: 0.58rem 0.6rem 0;
+}
+
+.from select {
+    padding: 1rem 0.5rem;
+    width: 8rem;
+    text-align: end;
+    margin-top: 0.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.2rem;
+}
+
+.to {
+    width: auto;
+    height: auto;
+}
+
+.to p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.to img {
+    position: absolute;
+    width: 3rem;
+    margin: 0.58rem 0.6rem 0;
+}
+
+.to select {
+    padding: 1rem 0.5rem;
+    width: 8rem;
+    text-align: end;
+    margin-top: 0.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.2rem;
+}
+
+#exchangeImg {
+    position: absolute;
+    width: 2.5rem;
+    margin-left: 11.7rem;
+    margin-top: 2.7rem;
+    cursor: pointer;
+}
+
+.output {
+    margin: 1.4rem auto;
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+.exchangeButton button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 450;
+}
+
+.exchangeButton button:hover {
+    background-color: var(--button-color);
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 520px) {
+    .container {
+        width: 25rem;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .amount p {
+        font-size: 1.1rem;
+    }
+
+    .amount input {
+        font-size: 1rem;
+    }
+
+    .from p {
+        font-size: 1.1rem;
+    }
+
+    .from img {
+        margin: 0.78rem 0.6rem;
+        width: 2.5rem;
+    }
+    
+    .from select {
+        width: 7rem;
+    }
+
+    .to p {
+        font-size: 1.1rem;
+    }
+
+    .to img {
+        margin: 0.78rem 0.6rem;
+        width: 2.5rem;
+    }
+    
+    .to select {
+        width: 7rem;
+    }
+
+    #exchangeImg {
+        width: 2.2rem;
+        margin-left: 9.55rem;
+    }
+
+    .output {
+        font-size: 1rem;
+    }
+
+    .exchangeButton button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .container {
+        width: 20rem;
+        margin-top: -2rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .amount {
+        margin-top: 1.7rem;
+    }
+
+    .amount p {
+        font-size: 1rem;
+    }
+
+    .amount input {
+        font-size: 0.9rem;
+    }
+
+    .from p {
+        font-size: 1rem;
+    }
+
+    .from img {
+        margin: 0.65rem 1.1rem;
+        width: 2.4rem;
+    }
+    
+    .from select {
+        height: auto;
+        width: 5rem;
+        padding: 2.5rem 0.8rem 0.5rem 0;
+    }
+
+    .to p {
+        font-size: 1rem;
+    }
+
+    .to img {
+        margin: 0.65rem 1.1rem;
+        width: 2.4rem;
+    }
+    
+    .to select {
+        height: auto;
+        width: 5rem;
+        padding: 2.5rem 0.8rem 0.5rem 0;
+    }
+
+    #exchangeImg {
+        width: 2.2rem;
+        margin-left: 7rem;
+        margin-top: 3rem;
+    }
+
+    .output {
+        font-size: 1rem;
+    }
+
+    .exchangeButton button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .container {
+        width: 15rem;
+        margin-top: -2rem;
+    }
+
+    .heading {
+        font-size: 1.6rem;
+    }
+
+    .amount {
+        margin-top: 1.3rem;
+    }
+
+    .amount p {
+        font-size: 1rem;
+    }
+
+    .amount input {
+        font-size: 0.9rem;
+    }
+
+    .converter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .from p {
+        font-size: 1rem;
+    }
+
+    .from img {
+        margin: 0.6rem 1.1rem;
+        width: 2.4rem;
+    }
+    
+    .from select {
+        height: auto;
+        width: 10rem;
+        padding: 0.77rem;
+    }
+
+    .to {
+        margin-top: 3rem;
+    }
+
+    .to p {
+        font-size: 1rem;
+    }
+
+    .to img {
+        margin: 0.6rem 1.1rem;
+        width: 2.4rem;
+    }
+    
+    .to select {
+        height: auto;
+        width: 10rem;
+        padding: 0.77rem;
+    }
+
+    #exchangeImg {
+        width: 2rem;
+        margin-left: 4.1rem;
+        margin-top: 6.2rem;
+        transform: rotate(90deg);
+    }
+
+    .output {
+        font-size: 1rem;
+    }
+
+    .exchangeButton button {
+        font-size: 1rem;
+    }
+}
